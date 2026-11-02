@@ -1,0 +1,74 @@
+# ==============================================================================
+# CashFlow-Guardian - Root .gitignore
+# Prevents sensitive credentials, databases, build artifacts & dependencies
+# ==============================================================================
+
+# --- Sensitive Environment & Secrets ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+# Allow example environment file template
+!.env.example
+
+# --- Local Databases & Storage ---
+data/
+backend/data/
+*.mv.db
+*.lock.db
+*.trace.db
+
+# --- Java & Gradle Build Artifacts ---
+backend/build/
+backend/.gradle/
+backend/bin/
+backend/out/
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+# Crucial: Gradle wrapper jar MUST be tracked for zero-dependency builds
+!backend/gradle/wrapper/gradle-wrapper.jar
+
+# --- Node.js & Frontend Artifacts ---
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/.oxlint_cache/
+
+# --- Logs ---
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- IDEs & Code Editors ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.vscode/
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+
+# --- OS System Junk ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini

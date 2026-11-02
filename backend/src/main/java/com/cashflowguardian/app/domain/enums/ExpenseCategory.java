@@ -1,0 +1,17 @@
+package com.cashflowguardian.app.domain.enums;
+
+public enum ExpenseCategory {
+    RENT,
+    SALARIES,
+    ELECTRICITY_AND_UTILITIES,
+    OFFICE_SUPPLIES,
+    MARKETING_AND_ADS,
+    TAXES_AND_DUTIES,
+    SOFTWARE_AND_SUBSCRIPTIONS,
+    RAW_MATERIALS_AND_INVENTORY,
+    TRAVEL_AND_LOGISTICS,
+    MAINTENANCE_AND_REPAIRS,
+    LEGAL_AND_PROFESSIONAL,
+    OTHER
+}
+
